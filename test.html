@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="test.css">
+</head>
+<body>
+<header>
+	<h1><i>Linked List</i></h1>
+</header>
+	<div id="body">
+		<div id="selectInstructions">
+			<p id="first">Create your linked list by entering any item in the text box below. Select a list option in the drop-down menu for further instructions.</p>
+			<p class="instructions" id="addInstructions"></p>
+			<p class="instructions" id="searchInstructions"></p>
+			<p class="instructions" id="deleteInstructions"></p>
+			<p class="instructions" id="deleteAllInstructions"></p>
+		</div>
+		<form onsubmit="return false">
+			Insert Item
+			<input type="text" id="insert"><br>
+			Select List Option:
+			<select disabled>
+				<option value="add">Add</option>
+				<option value="search">Search</option>
+				<option value="delete">Delete</option>
+				<option value="deleteAll">Delete All</option>
+			</select>
+			<input type="submit" id="submit" disabled>
+		</form>
+		<div>
+			<div class="result" id="listResult"></div>
+			<div class="result" id="searchResult"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="test.js"></script>
+</body>
+
+</html>
